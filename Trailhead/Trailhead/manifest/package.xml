@@ -35,6 +35,12 @@
         <name>AuraDefinitionBundle</name>
     </types>
     <types>
+        <members>DEVOPS_CENTER_GITHUB</members>
+        <members>DEVOPS_CENTER_PROD</members>
+        <members>DEVOPS_CENTER_TEST</members>
+        <name>AuthProvider</name>
+    </types>
+    <types>
         <members>Case</members>
         <members>Lead</members>
         <name>AutoResponseRules</name>
@@ -48,6 +54,7 @@
         <name>Community</name>
     </types>
     <types>
+        <members>DevOps_Center</members>
         <members>Teste_Guilda</members>
         <name>ConnectedApp</name>
     </types>
@@ -288,6 +295,31 @@
         <name>CustomObject</name>
     </types>
     <types>
+        <members>sf_devops__Async_Operation_Result__c-en_US</members>
+        <members>sf_devops__Back_Sync__c-en_US</members>
+        <members>sf_devops__Branch__c-en_US</members>
+        <members>sf_devops__Change_Bundle_Install__c-en_US</members>
+        <members>sf_devops__Change_Bundle__c-en_US</members>
+        <members>sf_devops__Change_Submission__c-en_US</members>
+        <members>sf_devops__Deploy_Component__c-en_US</members>
+        <members>sf_devops__Deployment_Result__c-en_US</members>
+        <members>sf_devops__Environment__c-en_US</members>
+        <members>sf_devops__Hidden_Remote_Change__c-en_US</members>
+        <members>sf_devops__Merge_Result__c-en_US</members>
+        <members>sf_devops__Object_Activity__c-en_US</members>
+        <members>sf_devops__Pipeline_Stage__c-en_US</members>
+        <members>sf_devops__Pipeline__c-en_US</members>
+        <members>sf_devops__Project__c-en_US</members>
+        <members>sf_devops__Remote_Change__c-en_US</members>
+        <members>sf_devops__Repository__c-en_US</members>
+        <members>sf_devops__Source_Member_Reference__c-en_US</members>
+        <members>sf_devops__Submit_Component__c-en_US</members>
+        <members>sf_devops__Vcs_Event__c-en_US</members>
+        <members>sf_devops__Work_Item_Promote__c-en_US</members>
+        <members>sf_devops__Work_Item__c-en_US</members>
+        <name>CustomObjectTranslation</name>
+    </types>
+    <types>
         <members>Contact.Standard_Rule_for_Contacts_with_Duplicate_Leads</members>
         <members>Lead.Standard_Rule_for_Leads_with_Duplicate_Contacts</members>
         <name>DuplicateRule</name>
@@ -356,6 +388,7 @@
     </types>
     <types>
         <members>sf_com_apps</members>
+        <members>sf_devops</members>
         <members>trlhdtips</members>
         <name>InstalledPackage</name>
     </types>
@@ -477,6 +510,30 @@
         <members>WorkStep-Work Step Layout</members>
         <members>WorkStepTemplate-Work Step Template Layout</members>
         <members>WorkThanks-Thanks Layout</members>
+        <members>sf_devops__App_Config__mdt-App Config Layout</members>
+        <members>sf_devops__Async_Operation_Result__c-Async Operation Result Layout</members>
+        <members>sf_devops__Back_Sync__c-Back Sync Layout</members>
+        <members>sf_devops__Branch__c-Branch Layout</members>
+        <members>sf_devops__Change_Bundle_Install__c-Change Bundle Install Layout</members>
+        <members>sf_devops__Change_Bundle__c-Change Bundle Layout</members>
+        <members>sf_devops__Change_Submission__c-Change Submission Layout</members>
+        <members>sf_devops__Deploy_Component__c-Deploy Component Layout</members>
+        <members>sf_devops__Deployment_Result__c-Deployment Result Layout</members>
+        <members>sf_devops__Environment__c-Environment Layout</members>
+        <members>sf_devops__Hidden_Remote_Change__c-Hidden Remote Change Layout</members>
+        <members>sf_devops__Merge_Result__c-Merge Result Layout</members>
+        <members>sf_devops__Object_Activity__c-Object Activity Layout</members>
+        <members>sf_devops__Pipeline_Stage__c-Pipeline Stage Layout</members>
+        <members>sf_devops__Pipeline__c-Pipeline Layout</members>
+        <members>sf_devops__Remote_Change__c-Remote Change Layout</members>
+        <members>sf_devops__Repository__c-Repository Layout</members>
+        <members>sf_devops__Service__mdt-Service Layout</members>
+        <members>sf_devops__Source_Member_Reference__c-Source Member Reference Layout</members>
+        <members>sf_devops__Submit_Component__c-Submit Component Layout</members>
+        <members>sf_devops__Vcs_Event__c-VCS Event Layout</members>
+        <members>sf_devops__Version__mdt-Version Layout</members>
+        <members>sf_devops__Work_Item_Promote__c-Work Item Promote Layout</members>
+        <members>sf_devops__Work_Item__c-Work Item Layout</members>
         <name>Layout</name>
     </types>
     <types>
@@ -642,10 +699,28 @@
         <name>MilestoneType</name>
     </types>
     <types>
+        <members>a0E8b000010PvHBEA0_DEV_Trailhead_002</members>
+        <members>a0E8b000010PvHBEA0_DEV_Trailhead_003</members>
+        <members>a0E8b000010PvHBEA0_DEV_Trailhead_004</members>
+        <members>a0E8b000010PvHBEA0_DEV_Trailhead_006</members>
+        <members>a0E8b000010PvHBEA0_DEV_Trailhead_007</members>
+        <members>a0E8b000010PvHBEA0_Dev_Trailhead_001</members>
+        <members>a0E8b000010PvHBEA0_Dev_Trailhead_005</members>
+        <members>a0E8b000010PvHBEA0_Teste_001</members>
+        <members>a0E8b000010PvHBEA0_Trailhead_DEV_001</members>
+        <members>a0E8b000010PvHBEA0_Trailhead_New_Stage_001</members>
+        <members>a0E8b000010PvHBEA0_Trailhead_Release_001</members>
+        <members>a0E8b000010PvHBEA0_matheus_oliveira_playful_shark_sv3h1y_com_001</members>
+        <members>a0E8b000010PvIWEA0_Trailhead_DX_Format_Release_001</members>
+        <name>NamedCredential</name>
+    </types>
+    <types>
         <members>NotificationTypeConfig</members>
         <name>NotificationTypeConfig</name>
     </types>
     <types>
+        <members>sf_devops_InitializeEnvironments</members>
+        <members>sf_devops_NamedCredentials</members>
         <members>sfdcInternalInt__sfdc_scrt2</members>
         <name>PermissionSet</name>
     </types>
@@ -1078,6 +1153,28 @@
         <members>WorkPlanTemplateEntry</members>
         <members>WorkStep</members>
         <members>WorkStepTemplate</members>
+        <members>sf_devops__Async_Operation_Result__c</members>
+        <members>sf_devops__Back_Sync__c</members>
+        <members>sf_devops__Branch__c</members>
+        <members>sf_devops__Change_Bundle_Install__c</members>
+        <members>sf_devops__Change_Bundle__c</members>
+        <members>sf_devops__Change_Submission__c</members>
+        <members>sf_devops__Deploy_Component__c</members>
+        <members>sf_devops__Deployment_Result__c</members>
+        <members>sf_devops__Environment__c</members>
+        <members>sf_devops__Hidden_Remote_Change__c</members>
+        <members>sf_devops__Merge_Result__c</members>
+        <members>sf_devops__Object_Activity__c</members>
+        <members>sf_devops__Pipeline_Stage__c</members>
+        <members>sf_devops__Pipeline__c</members>
+        <members>sf_devops__Project__c</members>
+        <members>sf_devops__Remote_Change__c</members>
+        <members>sf_devops__Repository__c</members>
+        <members>sf_devops__Source_Member_Reference__c</members>
+        <members>sf_devops__Submit_Component__c</members>
+        <members>sf_devops__Vcs_Event__c</members>
+        <members>sf_devops__Work_Item_Promote__c</members>
+        <members>sf_devops__Work_Item__c</members>
         <name>TopicsForObjects</name>
     </types>
     <types>
