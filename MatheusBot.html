@@ -1,24 +1,57 @@
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<style type='text/css'>
+	.embeddedServiceHelpButton .helpButton .uiButton {
+		background-color: #005290;
+		font-family: "Arial", sans-serif;
+	}
+	.embeddedServiceHelpButton .helpButton .uiButton:focus {
+		outline: 1px solid #005290;
+	}
+</style>
 
-<script type='text/javascript' src='https://service.force.com/embeddedservice/menu/fab.min.js'></script>
+<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
-		// Required if you want labels in a language that’s different from your user’s context.
-		//embedded_svc.menu.settings.language = ''; //For example, enter 'en' or 'en-US'
+		embedded_svc.settings.displayHelpButton = true; //Ou falso
+		embedded_svc.settings.language = 'pt'; //Por exemplo, insira "pt" ou "pt-BR"
 
-		embedded_svc.menu.init(
-			'https://wise-impala-lthm4n-dev-ed.trailblaze.my.salesforce.com',
-			'https://d.la5-c2-ia4.salesforceliveagent.com/chat',
+		//embedded_svc.settings.defaultMinimizedText = '...'; //(Assume como padrão o Chat com um especialista)
+		//embedded_svc.settings.disabledMinimizedText = '...'; //(Assume como padrão Agente off-line)
+
+		//embedded_svc.settings.loadingText = ''; //(Assume como padrão Carregando)
+		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Define o domínio de sua implantação para que seus visitantes possam navegar em subdomínios durante uma sessão de chat)
+
+		// Configurações para Chat
+		//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
+			// Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
+			// Returns a valid button ID.
+		//};
+		//embedded_svc.settings.prepopulatedPrechatFields = {}; //Define o preenchimento automático de campos de formulário de pré-chat
+		//embedded_svc.settings.fallbackRouting = []; //Uma matriz de IDs de botão, IDs de usuário ou userId_buttonId
+		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Padronizado para Entre em contato conosco)
+
+		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
+		embedded_svc.settings.entryFeature = 'LiveAgent';
+
+		embedded_svc.init(
+			'https://agasus--devnew.sandbox.my.salesforce.com',
+			'https://agasus--devnew.sandbox.my.site.com/ESWEnhancedChatBot1708464166838vforcesit',
 			gslbBaseURL,
-			'00D8b0000034dKR',
-			'MatheusBot'
+			'00DHZ000000hknj',
+			'Copy_Team',
+			{
+				baseLiveAgentContentURL: 'https://c.la2s-core1.sfdc-xwy4ub.salesforceliveagent.com/content',
+				deploymentId: '572HZ000000BXTh',
+				buttonId: '573HZ0000003RWj',
+				baseLiveAgentURL: 'https://d.la2s-core1.sfdc-xwy4ub.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'Copy_Team',
+				isOfflineSupportEnabled: false
+			}
 		);
 	};
 
-	if (!window.embedded_svc || !window.embedded_svc.menu) {
+	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://wise-impala-lthm4n-dev-ed.trailblaze.my.salesforce.com/embeddedservice/menu/fab.min.js');
+		s.setAttribute('src', 'https://agasus--devnew.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
@@ -27,8 +60,3 @@
 		initESW('https://service.force.com');
 	}
 </script>
-
-
-
-
-</html>
